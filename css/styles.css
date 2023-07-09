@@ -120,4 +120,11 @@ img {
 
 .footer {
   grid-area: footer;
+  background: var(--default-gradient);
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }
