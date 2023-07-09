@@ -78,6 +78,8 @@ img {
   margin-left: 15px;
 }
 
+/* logo */
+
 .logo {
   max-width: 200px;
 }
@@ -105,9 +107,31 @@ img {
   background-color: #b07dfb;
 }
 
+/* content */
+
 .content {
   grid-area: content;
+  max-width: 900px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
 }
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.img1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.img2 {
+  align-self: end;
+}
+
+/* ad */
 
 .ad {
   grid-area: ad;
@@ -117,6 +141,8 @@ img {
   padding: 30px;
   gap: 30px;
 }
+
+/* footer */
 
 .footer {
   grid-area: footer;
