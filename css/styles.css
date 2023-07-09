@@ -3,6 +3,7 @@
 :root {
   --default-gradient: linear-gradient(135deg, #8844ee, #b07dfb);
   --gray-background: #fafbfc;
+  --card-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
 }
 
 body,
@@ -99,7 +100,7 @@ img {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  box-shadow: var(--card-shadow);
   transition: 0.1s ease-out;
 }
 
@@ -129,6 +130,78 @@ img {
 
 .img2 {
   align-self: end;
+}
+
+/* general content styles */
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* infor */
+
+.info p + p {
+  margin-top: 30px;
+}
+
+/* title */
+
+.title {
+  color: #b07dfb;
+}
+
+.title h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title span {
+  font-size: 0.975em;
+  font-style: italic;
+}
+
+/* characteristics */
+
+.characteristics {
+  display: flex;
+  align-items: flex-start;
+}
+
+.characteristics > div {
+  width: 80px;
+  text-align: center;
+  background: var(--default-gradient);
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.characteristics > div:first-child {
+  margin-right: 30px;
+}
+
+.characteristics span {
+  display: block;
+  color: #b07dfb;
+}
+
+.number {
+  color: #b07dfb;
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.label {
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
 }
 
 /* ad */
