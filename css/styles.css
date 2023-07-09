@@ -2,6 +2,7 @@
 
 :root {
   --default-gradient: linear-gradient(135deg, #8844ee, #b07dfb);
+  --gray-background: #fafbfc;
 }
 
 body,
@@ -29,6 +30,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 /* general */
@@ -83,7 +85,7 @@ img {
 /* sidenav */
 .sidenav {
   grid-area: sidenav;
-  background-color: #fafbfc;
+  background-color: var(--gray-background);
   padding: 30px;
 }
 
@@ -109,6 +111,11 @@ img {
 
 .ad {
   grid-area: ad;
+  background-color: var(--gray-background);
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
 .footer {
